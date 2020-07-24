@@ -28,6 +28,7 @@ def get_japanese_emoticon(file, eng_emoti)
 end
 
 def get_english_meaning(file, meaning)
+  
  emoticons = load_library(file)
   emoticons.each do |name, languages|
     
