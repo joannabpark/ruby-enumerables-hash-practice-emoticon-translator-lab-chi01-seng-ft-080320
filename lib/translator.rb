@@ -19,6 +19,7 @@ def get_english_meaning(file, meaning)
  emoticons = load_library(file)
  emoticons.each do |emotion, lang|
     lang.each do |inner_key,emoticon|
+      apology = "Sorry, "
       if emoticon == j_emoticon
         eng_meaning = emotion
       end
@@ -27,4 +28,3 @@ def get_english_meaning(file, meaning)
       eng_meaning = apology
     end  
   end
-  eng_meaning
