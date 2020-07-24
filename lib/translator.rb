@@ -18,7 +18,7 @@ def get_japanese_emoticon(file, eng_emoji)
        if idioms[:english] == eng_emoji
          return idioms[:japanese]
   end
-  "Sorry, that emoticon was not found"
+  return "Sorry, that emoticon was not found"
 end
 end
 
