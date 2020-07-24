@@ -13,10 +13,9 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, eng_emoti)
-  # code goes here
   translation = ""
-  new_hash = load_library(file)
-  new_hash.each do |name, languages|
+  emoticons = load_library(file)
+  emoticons.each do |name, languages|
       if languages[:english] == eng_emoti
       translation = languages[:japanese]
     end
