@@ -34,6 +34,7 @@ def get_english_meaning(file, meaning)
     if languages[:japanese] == meaning
       emotion = name
     end
+  end
     if emotion == ""
       return "Sorry, that emoticon was not found"
     else 
