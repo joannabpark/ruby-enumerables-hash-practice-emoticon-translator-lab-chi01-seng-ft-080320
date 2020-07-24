@@ -13,7 +13,6 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, eng_emoji)
-  # code goes here
   emoticons = load_library(file)
   emoticons.each do |meaning, idioms|
        if idioms[:english] == eng_emoji
